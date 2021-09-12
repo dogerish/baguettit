@@ -1,0 +1,58 @@
+:root {
+	--base: #222;
+	--accent: #444;
+	--top: white;
+}
+
+body {
+	background: var(--base);
+	color: var(--top);
+	margin: 0;
+}
+a {
+	color: var(--top);
+}
+
+/* general dock applets */
+#dock {
+	background: var(--accent);
+	width: 100%;
+	position: sticky;
+	left: 0;
+	top: 0;
+	display: flex;
+}
+.dock-nav {
+	flex-grow: 1;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	padding: 5pt 5pt 5pt 5pt;
+	border: solid var(--base);
+	border-width: 0px 2px 0px 2px;
+	text-decoration: none;
+}
+.dock-first {
+	border-left: 0px;
+}
+.dock-last {
+	border-right: 0px;
+}
+/* specific dock applets */
+#home {
+	flex-grow: 0;
+}
+#logo {
+	height: 32px;
+}
+#dock #spacer {
+	flex-grow: 10;
+	justify-content: flex-end;
+}
+
+/* tail styles */
+#icon-credit {
+	font-style: italic;
+	text-align: center;
+	margin: 10px;
+}
